@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  
+    <title>Temparature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="navbar">
+        <nav>
+            <!-- www.Temperatureconverter.com -->
+		</nav>
+
+        <div class="temp_calculator ">
+            <h2 class="title">Temperature Converter</h2>
+            
+            <form action="" name="form">
+        <div class="temp_calculator_inputs">
+            <div class="calculator_value">
+                <label for="">Enter Value :</label>
+            <input type="text" placeholder="0" name="value" id="input_value">
+          </div>
+
+          <div class="calculator_input">
+              <label for="">From:</label>
+              <select name="input" id="input" class="box">
+                  <option value="celsius" >Celsius (°C)</option>
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              
+            </select>
+        </div>
+        <div class="calculator_input">
+            <label for="">To:</label>
+            <select name="output" id="output" class="box">
+              <option value="celsius">Celsius (°C)</option>
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              
+            </select>
+          </div>          
+        </div>
+        <button type="button" id="clear" class="cal-btn" onclick="reset()">Reset</button>
+        <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()">Convert</button>
+        <div class="result_area"  >
+            <label for=""  >Answer:</label>
+            <input type="text" class="box" value=""  id="result" class="box">
+        </div>
+    </form>
+</div>
+</div>
+
+
+  
+</html>
